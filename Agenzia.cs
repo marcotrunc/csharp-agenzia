@@ -57,6 +57,12 @@ namespace csharp_agenzia
             Immobili.Add(i);
         }
 
+        internal void AddListaImmobili(List<Immobile> immobiles)
+        {
+           foreach (Immobile im in immobiles)
+                AddImmobile(im);
+        }
+
         public List<Immobile> Searchimmobili(string key)
         {
             /*List<Immobile> miaSottoLista = new List<Immobile> ();

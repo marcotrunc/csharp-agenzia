@@ -18,9 +18,9 @@ namespace csharp_agenzia
             Agenzia az = new Agenzia("Immobiliare");
             az.AddImmobile(newApp);
             az.AddImmobile(newBox);
-            
+            az.AddListaImmobili(new List<Immobile>() { newApp, newBox });
 
-            List<Immobile> results = az.Searchimmobili("5");
+            List<Immobile> results = az.Searchimmobili("Roma");
 
             foreach (Immobile m in results)
             {
